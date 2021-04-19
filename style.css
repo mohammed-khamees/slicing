@@ -1,0 +1,308 @@
+/* global*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+img {
+	width: 20px;
+	height: 20px;
+}
+
+/* header */
+
+header {
+	height: 90px;
+	width: 100%;
+	background-color: rgb(228, 241, 248);
+	box-shadow: 0px 5px 9px 2px rgba(0, 0, 0, 0.57);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5rem;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.orange {
+	color: orange;
+}
+
+.links {
+	flex: 0 0 calc(30% - 2rem);
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.link {
+	cursor: pointer;
+}
+
+.home {
+	color: orange;
+}
+
+.bannar {
+	height: 100vh;
+	background-image: url('https://data.whicdn.com/images/139490667/original.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bannar-info {
+	padding: 17rem 0 0 5rem;
+	color: rgb(172, 172, 172);
+	font-size: 1.5rem;
+	width: 40%;
+	letter-spacing: 0.15rem;
+}
+
+.bannar-info h1 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+	text-shadow: 2px 2px 15px rgba(0, 0, 0, 1);
+}
+
+.bannar-info p {
+	margin-bottom: 2rem;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 0.7rem 1rem;
+	font-size: 1.7rem;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border: none;
+	color: white;
+	background-color: rgb(27, 27, 27);
+}
+
+/* main */
+
+main {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 253, 253);
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+}
+
+.about {
+	width: 100%;
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+.about-desc {
+	width: 70%;
+	text-align: center;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.read {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.cats {
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-top: 1rem;
+}
+
+.cat {
+	flex: 0 0 calc(20% - 1rem);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: white;
+	height: 90%;
+	border-top: 3px solid orange;
+	padding-top: 3rem;
+	box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.7);
+}
+
+.cat-title {
+	font-weight: bold;
+	font-size: 1.7rem;
+	margin-bottom: 2rem;
+}
+
+.icon {
+	font-size: 3rem;
+}
+
+.divider {
+	border-top: 3px solid orange;
+	width: 20%;
+	margin-bottom: 2rem;
+}
+
+.info {
+	width: 85%;
+	line-height: 1.4rem;
+}
+
+.meet {
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(231, 230, 230);
+	padding: 3rem 3rem 0;
+}
+
+.meet-title {
+	font-size: 2rem;
+	padding-bottom: 0.5rem;
+}
+
+.divider-meet {
+	border-top: 3px solid orange;
+	width: 11%;
+	margin-bottom: 2rem;
+}
+
+.volnteer {
+	width: 90%;
+	/* height: 80%; */
+	display: flex;
+	justify-content: space-evenly;
+	background-color: white;
+	box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.7);
+	padding: 3rem;
+	position: relative;
+}
+
+.person {
+	flex: 0 0 calc(50% - 2rem);
+	border-right: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.person-container {
+	height: 100%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+}
+
+.person-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.person-info img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.desc {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.desc h3 {
+	width: 100%;
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.desc p {
+	font-size: 2rem;
+	width: 40%;
+}
+
+.person-desc {
+	font-size: 1.2rem;
+	width: 80%;
+}
+
+.achivments {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 1.1rem;
+}
+
+.achivments img {
+	width: 100%;
+	height: 90%;
+}
+
+.achivments-title {
+	width: 100%;
+	text-align: left;
+	font-size: 1.3rem;
+	margin-bottom: 0.7rem;
+}
+
+.angle {
+	font-size: 1.5rem;
+	position: absolute;
+	bottom: 3%;
+	left: 47%;
+}
+
+/*footer*/
+
+footer {
+	height: 70px;
+	width: 100%;
+	background-color: rgb(92, 100, 89);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: white;
+	font-weight: bold;
+}
